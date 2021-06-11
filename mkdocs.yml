@@ -1,0 +1,63 @@
+site_name: Connectnpay API Documentation
+site_url: https://example.com/
+site_description: Project documentation with Markdown.
+site_author: Connectnpay Team
+
+
+nav:
+    - Home: index.md
+    - Capital:
+        - Request: capital.md
+        - Response: Responsecapital.md
+   
+    - Cas:
+        - Request: cas.md
+    
+    - apartment:
+        - Request: apartment.md
+        
+    - Insurance:
+        - ImeLife: imeLife.md
+        - JyotiLife: jyotiLife.md
+        - NepalLife: nepalLife.md
+        - SanimaLife: sanimaLife.md
+
+    - SMS Server: 
+        - F1soft SMS VAS Aggregator: sms.md   
+
+    - About:
+        - Release Notes: about/release-notes.md
+        - Contributing: about/contributing.md
+        - License: about/license.md
+
+# theme:
+#     name: mkdocs
+#     highlightjs: true
+#     hljs_languages:
+#         - yaml
+#         - rust
+
+# theme:
+#     name: readthedocs
+#     highlightjs: true
+#     hljs_languages:
+#         - yaml
+#         - rust
+
+theme:
+    name: flatly
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+
+# theme:
+#     name: gitbook
+#     highlightjs: true
+#     hljs_languages:
+#         - yaml
+#         - rust
+
+
+
+# plugins: ['search']
