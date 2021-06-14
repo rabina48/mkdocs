@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project documentation with Markdown.">
+    <meta name="author" content="Connectnpay Team">
+    <link rel="canonical" href="https://example.com/0.2/sms/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>F1soft SMS VAS Aggregator - Connectnpay API Documentation</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Connectnpay API Documentation</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../">Version Selector</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capital <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../capital/">Request</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cas/">Request</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">apartment <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../apartment/">Request</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../imeLife/">ImeLife</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../jyotiLife/">JyotiLife</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../nepalLife/">NepalLife</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../sanimaLife/">SanimaLife</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SMS Server <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">F1soft SMS VAS Aggregator</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../about/release-notes.md">Release Notes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../about/contributing.md">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../about/license.md">License</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../sanimaLife/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="next" >
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#api-documentation">API documentation</a></li>
+            <li class="second-level"><a href="#version-history">Version History</a></li>
+                
+            <li class="second-level"><a href="#about-us">About Us</a></li>
+                
+            <li class="second-level"><a href="#important-parameters">Important Parameters:</a></li>
+                
+            <li class="second-level"><a href="#signature-generation-mechanism">Signature generation mechanism:</a></li>
+                
+        <li class="first-level "><a href="#send-sms">Send SMS</a></li>
+            <li class="second-level"><a href="#request-method">Request method:</a></li>
+                
+            <li class="second-level"><a href="#headers">Headers:</a></li>
+                
+            <li class="second-level"><a href="#request-body-parameters">Request body parameters:</a></li>
+                
+            <li class="second-level"><a href="#sample-request-body">Sample request body:</a></li>
+                
+            <li class="second-level"><a href="#example">EXAMPLE:</a></li>
+                
+                <li class="third-level"><a href="#1-response-body-parameters">1. Response body parameters:</a></li>
+                <li class="third-level"><a href="#2-data">2. Data</a></li>
+                <li class="third-level"><a href="#responses">Responses:</a></li>
+        <li class="first-level "><a href="#receive-sms-callback">Receive SMS callback:</a></li>
+            <li class="second-level"><a href="#request-method_1">Request method:</a></li>
+                
+            <li class="second-level"><a href="#headers_1">Headers:</a></li>
+                
+            <li class="second-level"><a href="#request-body-parameter">Request body parameter:</a></li>
+                
+            <li class="second-level"><a href="#response-parameter">Response Parameter</a></li>
+                
+            <li class="second-level"><a href="#sample-request-body_1">Sample Request body:</a></li>
+                
+            <li class="second-level"><a href="#response-parameter_1">Response Parameter:</a></li>
+                
+            <li class="second-level"><a href="#response-sample">Response sample:</a></li>
+                
+            <li class="second-level"><a href="#code-samples">**Code Samples:</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="api-documentation">API documentation</h2>
+<p><a href="docs/site/img/nibl.jpg">Screenshot</a>
+<br></p>
+<h4 id="version-history"><strong>Version History</strong></h4>
+<table>
+<thead>
+<tr>
+      <th>Date</th>
+      <th>Version</th>
+      <th>Author</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>28-04-2021</td>
+      <td>1.0</td>
+      <td>Ronika Sthapit</td>
+      <td>Initial documentation</td>
+    </tr>
+    <tr>
+      <td>28-04-2021</td>
+      <td>1.1</td>
+      <td>Ronika Sthapit</td>
+      <td>Added HMAC generation techniques</td>
+    </tr>
+</tbody>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="about-us"><strong>About Us</strong></h4>
+<p style="text-align:justify">F1Soft International is a company working in the field of software development and IT services. Being a
+pioneer in introducing mobile banking and mobile financial services in Nepal, we have been duly
+recognized by national and international bodies and awarded with the 2013 FNCCI Service Excellence
+Award and the 2014 International Business Awards for our innovative technological solutions.
+We have devoted a considerable amount of energy and time on developing mobile and SMS based
+applications, internet banking platforms, card management solutions, payment gateways, and various
+software systems. E-Sewa, Nepal’s first and leading online payment gateway, is one of our popular and
+acclaimed products. Today, the online payment gateway is used by around 300k customers where they
+can conveniently pay for a host of services including airlines, movies and bus tickets and also receive and
+send money digitally via its web or mobile based platform.
+We have a set of skilled engineers and staff who have an in-depth understanding of developing and
+deploying software’s tailored to meet the needs of our clients. We lead the market when it comes to
+transaction banking products with almost 90% of Nepal’s financial institutions using at least one of our
+transaction banking products. Our clients include financial institutions, corporate and media houses,
+industrial firms, telecoms, travel agencies and other organizations which bear a name in their own field.
+Established in 2004, the company currently employs 210 people with combined expertise and
+competence in technology and management. F1Soft is focused on the continuous innovation and
+improvement of its transaction banking products.
+</p>
+
+<pre><code>
+</code></pre>
+<h4 id="important-parameters"><strong>Important Parameters:</strong></h4>
+<table>
+<thead>
+<tr>
+      <th>PARAMETER NAME</th>
+      <th>PARAMETER VALUE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>< algorithm></td>
+      <td>HmacSHA512</td>
+    </tr>
+    <tr>
+      <td> < apikey ></td>
+      <td>test@test.com.np</td>
+    </tr>
+        <tr>
+      <td>< apisecret ></td>
+      <td>dhjkloipyur5fhjusdnbhadsf</td>
+    </tr>
+        <tr>
+      <td>< delimiter ></td>
+      <td>“ ” (single space/whitespace)</td>
+    </tr>
+        <tr>
+      <td>< nonce ></td>
+      <td>Random alphanumeric value (e.g. uuid)</td>
+    </tr>
+</tbody>
+</tbody>
+</table>
+
+<p><br></p>
+<h4><b>Response Status Code:</b></h4>
+<table>
+<thead>
+<tr>
+      <th>SYSTEM CODE</th>
+      <th>DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Success</td>
+    </tr>
+      <tr>
+      <td>-1</td>
+      <td>Failure</td>
+    </tr>
+    </tbody>
+</tbody>
+</table>
+
+<h4 id="signature-generation-mechanism"><strong>Signature generation mechanism:</strong></h4>
+<pre><code>The client needs to generate HMAC hash by preparing below raw string form:
+Create HMAC token using &lt;algorithm&gt;
+
+* Prepare your signature data based on this format
+
+&lt;delimiter&gt;&lt;apiKey&gt;&lt;delimiter&gt;&lt;nonce&gt;&lt;delimiter&gt;&lt;requestpayload&gt;&lt;delimiter&gt;
+(Note: Please observe that delimiter(whitespace) is required in between the data.
+Furthermore, it is also placed at the start and end of the string form.)
+Here API username will be shared by F1Soft, nonce must be unique for each request (can be
+used as unique transaction id or timestamp), request body is payload for API invocation. The
+client needs to do HMAC SHA512 hashing to above raw details and perform base64 encoding
+to produce binary byte data. The final base64 encoded form is referred as signature hash.
+
+* Encode the signature using Base64
+</code></pre>
+<p><br></p>
+<h2 id="send-sms"><strong>Send SMS</strong></h2>
+<p>This API is used by the third party to send SMS to the mobile users. The API is secured with HMAC
+authentication.</p>
+<table>
+<thead>
+<tbody>
+<tr>
+      <td>URL:</td>
+      <td>[https://smsapi.f1soft.com/sms/send][1]
+
+      </td>
+    </tr>
+    </tbody>
+  </thead>
+  </table>
+
+<p>URL:         <a href="https://smsapi.f1soft.com/sms/send">https://smsapi.f1soft.com/sms/send</a> </p>
+<h4 id="request-method"><strong>Request method:</strong></h4>
+<pre><code>HTTP METHOD: POST
+</code></pre>
+<h4 id="headers"><strong>Headers:</strong></h4>
+<table>
+<thead>
+<tbody>
+<tr>
+      <td>CONTENT TYPE</td>
+      <td>application/json</td>
+    </tr>
+    <tr>
+      <td>AUTHORIZATION</td>
+      <td>< algorithm > < apikey >:< nonce >:< signature ></td>
+    </tr>
+    <tr>
+      <td>AUTHORIZATION-TYPE</td>
+      <td>HMAC</td>
+    </tr>
+    <t/body>
+  </thead>
+  </table>
+<p><br></p>
+<p><strong>Authorization example:</strong></p>
+<pre><code>HmacSHA512 test@test.com.np:29206090-9a88-4fd7-9285-bbcb2510d204:
+SHAd50a54bc92ae8c657adgf272c5a7aaf41d1978e635z7e9oba64c2504baa22d1c9da4ac72b22pfc2080402b6ca5
+37ad63bfe6703becac8213a59cebfd85f30f58
+</code></pre>
+<h4 id="request-body-parameters"><strong>Request body parameters:</strong></h4>
+<table>
+  <thead>
+    <tr>
+      <th>PARAMETER NAME</th>
+      <th>Type</th>
+      <th>MANDATORY</th>
+      <th>REMARKS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mobileNumber</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Valid telco subscriber mobile no.</td>
+    </tr>
+    <tr>
+      <td>message</td>
+      <td>String</td>
+      <td>No</td>
+      <td>Message to send
+[ Unicode message also supported]</td>
+    </tr>
+     <tr>
+      <td>Password</td>
+      <td>String</td>
+      <td>yes</td>
+      <td>otp/alert</td>
+    </tr>
+     <tr>
+      <td>RequestId</td>
+      <td>String</td>
+      <td>yes</td>
+      <td>Unique id for every sms transaction</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="sample-request-body"><strong>Sample request body:</strong></h4>
+<pre><code>{&quot;mobileNumber&quot;:&quot;98xxxxxxxx&quot;,
+&quot;message&quot;:&quot;Message to send&quot;,
+“type&quot;:&quot;otp&quot;,
+&quot;uniqueId&quot;:&quot;F1-1001&quot;}
+</code></pre>
+<pre><code>*NOTE: REQUEST BODY SHOULD NOT HAVE ANY SPACE IN IT .
+</code></pre>
+<p><br></p>
+<h3 id="example">EXAMPLE:</h3>
+<h4 id="1-response-body-parameters"><strong>1. Response body parameters:</strong></h4>
+<table>
+  <thead>
+    <tr>
+      <th>PARAMETER NAME</th>
+      <th>Type</th>
+      <th>REMARKS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>status</td>
+      <td>boolean</td>
+      <td>Success/Failure flag</td>
+    </tr>
+    <tr>
+      <td>message</td>
+      <td>String</td>
+      <td>Api result description</td>
+    </tr>
+     <tr>
+      <td>code</td>
+      <td>Object</td>
+      <td>System success/failure code</td>
+    </tr>
+     <tr>
+      <td>data</td>
+      <td>String</td>
+      <td>Response actual data</td>
+    </tr>
+    <tr>
+      <td>httpStatus</td>
+      <td>String</td>
+      <td>Api status code</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2-data"><strong>2. Data</strong></h4>
+<table>
+  <thead>
+    <tr>
+      <th>PARAMETER NAME</th>
+      <th>Type</th>
+      <th>REMARKS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mobileNumber</td>
+      <td>string</td>
+      <td>SMS received mobile number</td>
+    </tr>
+    <tr>
+      <td>msgId</td>
+      <td>string</td>
+      <td>SMS sent unique id</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h4 id="responses"><strong>Responses:</strong></h4>
+<p><b>Success response:</b></p>
+<pre><code>
+{
+&quot;status&quot;: true,
+&quot;message&quot;: &quot;SMS delivered successfully&quot;,
+&quot;code&quot;: &quot;0&quot;,
+&quot;data&quot;: {
+&quot;mobileNumber&quot;: &quot;98xxxxxxxx&quot;,
+&quot;msgId&quot;: &quot;MN-1553144161875&quot;
+},
+&quot;httpStatus&quot;: 200
+}
+</code></pre>
+<p><strong>Authentication failed:</strong></p>
+<pre><code>{
+&quot;timestamp&quot;: 1522047604846,
+&quot;status&quot;: 403,
+&quot;error&quot;: &quot;Forbidden&quot;,
+&quot;message&quot;: &quot;Invalid authorization data&quot;,
+&quot;path&quot;: &quot;/sms/send&quot;
+}
+</code></pre>
+<p><strong>SMPP Error:</strong></p>
+<pre><code>{
+&quot;code&quot;: &quot;-1&quot;,
+&quot;developerMessage&quot;: &quot;Failed to submit to the SMSC.&quot;,
+&quot;link&quot;: &quot;string&quot;,
+&quot;message&quot;: &quot;SMS delivery failed&quot;,
+&quot;status&quot;: false,
+&quot;httpStatus&quot;: 406
+}
+</code></pre>
+<p><strong>Delivery failed:</strong></p>
+<pre><code>{
+&quot;code&quot;: &quot;-1&quot;,
+&quot;developerMessage&quot;: &quot;Failed to submit to the SMSC.&quot;,
+&quot;link&quot;: &quot;string&quot;,
+&quot;message&quot;: &quot;SMS delivery failed&quot;,
+&quot;status&quot;: false,
+&quot;httpStatus&quot;: 406
+}
+</code></pre>
+<p><br></p>
+<h2 id="receive-sms-callback">Receive SMS callback:</h2>
+<p>SMS Aggregator system receives SMS, sent to client’s short-codes. This system triggers callback
+notification to client’s system, if this setting is configured. The client’s system needs to develop callback
+API based on the specifications below:</p>
+<h4 id="request-method_1"><strong>Request method:</strong></h4>
+<pre><code>HTTP METHOD: POST
+</code></pre>
+<h4 id="headers_1"><strong>Headers:</strong></h4>
+<table>
+  <tbody>
+    <tr>
+      <td>CONTENT TYPE</td>
+      <td>application/json</td>
+    </tr>
+    <tr>
+      <td>AUTHORIZATION</td>
+      <td>< algorithm > < apikey >:< nonce >:< signature ></td>
+    </tr>
+      <tr>
+      <td>AUTHORIZATION-TYPE</td>
+      <td>HMAC</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<p><strong>Authorization example:</strong></p>
+<pre><code>HmacSHA512 test@test.com.np:29206090-9a88-4fd7-9285-bbcb2510d204:
+SHAd50a54bc92ae8c657adgf272c5a7aaf41d1978e635z7e9oba64c2504baa22d1c9da4ac72b22pfc2080402b6ca5
+37ad63bfe6703becac8213a59cebfd85f30f58
+</code></pre>
+<p><strong>Note:</strong> We will send HMAC in Authorization for this API.</p>
+<h4 id="request-body-parameter"><strong>Request body parameter:</strong></h4>
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Mandatory</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>boid</td>
+      <td>string</td>
+      <td>Yes</td>
+      <td>Boid Provided by Bank</td>
+    </tr>
+    <tr>
+      <td>username</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Client username</td>
+    </tr>
+     <tr>
+      <td>Password</td>
+      <td>String</td>
+      <td>yes</td>
+      <td>Client Password</td>
+    </tr>
+     <tr>
+      <td>RequestId</td>
+      <td>String</td>
+      <td>yes</td>
+      <td>Unique Request Id</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-parameter"><strong>Response Parameter</strong></h4>
+<table>
+  <thead>
+    <tr>
+      <th>PARAMETER NAME</th>
+      <th>DESCRIPTION</th>
+      <th>DATA TYPE</th>
+      <th>MANDATORY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>message</td>
+      <td>SMS text received from customer as SMS message</td>
+      <td>String</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>resultDescription</td>
+       <td>Mobile number of SMS Sender</td>
+      <td>String</td>
+      <td>Yes</td>
+    </tr> 
+      <tr>
+      <td>boid</td>
+       <td>SMS received date</td>
+      <td>String</td>
+      <td>Yes</td>
+    </tr>
+     <tr>
+      <td>name</td>
+       <td>Trace ID to uniquely identify SMS received
+transaction id</td>
+     <td>String</td>
+      <td>Yes</td>
+    </tr>
+    <td>totalAmount</td>
+       <td>SMS shortcode where user sends SMS from app</td>
+       <td>String</td>
+      <td>Yes</td>
+  </tbody>
+</table>
+
+<h4 id="sample-request-body_1"><strong>Sample Request body:</strong></h4>
+<pre><code>{&quot;message&quot;:&quot;BALANCE&quot;,&quot;mobileNumber&quot;:&quot;98xxxxxxxx&quot;,&quot;receivedDate&quot;:&quot;2021-04-28 16:52:20&quot;,&quot;traceid&quot;:&quot;CNP-
+1001&quot;,&quot;shortCode&quot;:&quot;XXXX&quot;}
+</code></pre>
+<pre><code>*NOTE:  REQUEST BODY SHOULD NOT HAVE ANY SPACE IN IT .
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>{
+“message”: “BALANCE”,
+“mobileNumber”: “98xxxxxxxx”,
+“receivedDate”: “2021-04-28 16:52:20”,
+“traceid”: “CNP-1001”
+&quot;shortCode&quot;: &quot;XXXX&quot;
+}
+</code></pre>
+<h4 id="response-parameter_1"><strong>Response Parameter:</strong></h4>
+<table>
+  <thead>
+    <tr>
+      <th>PARAMETER NAME</th>
+      <th>Type</th>
+      <th>REMARKS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>code</td>
+      <td>string</td>
+      <td>Response status of the response</td>
+    </tr>
+    <tr>
+      <td>message</td>
+      <td>string</td>
+      <td>Description of the response</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h4 id="response-sample"><strong>Response sample:</strong></h4>
+<pre><code>{
+“code”: “0”,
+“message”: “Notified successfully.”
+}
+</code></pre>
+<h4 id="code-samples">**Code Samples:</h4>
+<pre><code>&lt;?php
+$apiKey = '&lt;apikey shared to client&gt;';
+$apiSecret = '&lt;apisecret shared to client&gt;';
+$nonce = '1234567';
+$requestData = ['mobileNumber'=&gt; '98xxxxxxxx', 'message'=&gt; 'Message to send', 'type'=&gt;'otp', 'uniqueId'=&gt;'F1-
+1001'];
+$url = 'https://smsapi.f1soft.com/sms/send';
+$delimiter = ' ';
+$digestString = $delimiter
+. $apiKey. $delimiter
+. $nonce. $delimiter
+. json_encode($requestData) . $delimiter;
+$digest = hash_hmac('SHA512', $digestString, $apiSecret, true);
+$headers = ['Authorization: HmacSHA512 '. $apiKey . ':' . $nonce . ':' . base64_encode($digest), 'Content-Type:
+application/json'];
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, &quot;POST&quot;);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($requestData));
+$curlOptions = [
+CURLOPT_URL =&gt; $url,
+CURLOPT_RETURNTRANSFER =&gt; true,
+CURLOPT_FOLLOWLOCATION =&gt; true,
+CURLOPT_MAXREDIRS =&gt; 10,
+CURLOPT_HTTPHEADER =&gt; $headers,
+CURLOPT_HEADER =&gt; false,
+];
+curl_setopt_array($ch, $curlOptions);
+$res = curl_exec($ch);
+echo $res;
+</code></pre>
+<p><strong>Java</strong></p>
+<pre><code>public class Main {
+public static void main(String[] args)
+throws
+NoSuchAlgorithmException,
+InvalidKeyException {
+String apiKey = &quot;&lt;apikey shared to client&gt;”;
+String apiSecret = &quot;&lt;apiSecret shared to client&gt;&quot;;
+String delimiter = &quot; &quot;;
+String nonce = &quot;29206090-9a88-4fd7-9285-bbcb2510d204&quot;;
+String requestPayload = &quot;{&quot;mobileNumber\&quot;:\&quot;98xxxxxxxx\&quot;,\&quot;message\&quot;:\&quot;Message to
+send\&quot;,\&quot;type\&quot;:\&quot;otp\&quot;,\&quot;uniqueId\&quot;:\&quot;F1-1001\&quot;}&quot;;
+String signatureBase = delimiter + apiKey + delimiter + nonce + requestPayload + delimiter;
+Mac hasher = Mac.getInstance(&quot;HmacSHA512&quot;);
+hasher.init(new SecretKeySpec(apiSecret.getBytes(), &quot;HmacSHA512&quot;));
+byte[] hash = hasher.doFinal(signatureBase.getBytes());
+String signature = DatatypeConverter.printBase64Binary(hash);
+String header = &quot;HmacSHA512&quot; + &quot; &quot; + apiKey + &quot;:&quot; + nonce + &quot;:&quot; + signature;
+System.out.println(header);
+}
+}
+</code></pre>
+<p><strong>.NET</strong></p>
+<pre><code>using System;
+using System.Security.Cryptography;
+using System.Text;
+public class Program{
+public static void Main(){
+String apiKey = &quot;&lt;apikey shared to client&gt;”;&quot;;
+String apiSecret = &quot;&lt;apiSecret shared to client&gt;&quot;;
+String delimiter = &quot; &quot;;
+String nonce = &quot;29206090-9a88-4fd7-9285-bbcb2510d204&quot;;
+String requestPayload = &quot;{&quot;mobileNumber\&quot;:\&quot;98xxxxxxxx\&quot;,\&quot;message\&quot;:\&quot;Message to
+send\&quot;,\&quot;type\&quot;:\&quot;otp\&quot;,\&quot;uniqueId\&quot;:\&quot;F1-1001\&quot;}&quot;;
+String signatureBase = delimiter+apiKey+delimiter+nonce+requestPayload+delimiter;
+String signature = HMAC_SHA512(apiSecret, signatureBase);
+String header = &quot;HmacSHA512&quot;+ &quot; &quot;+ apiKey+&quot;:&quot;+nonce+&quot;:&quot;+signature;
+Console.WriteLine(header);
+}
+public static string HMAC_SHA512(string keyString, string message){
+byte[] key = Encoding.ASCII.GetBytes(keyString);
+HMACSHA512 sha = new HMACSHA512(key);
+byte[] input = Encoding.ASCII.GetBytes(message);
+return BitConverter.ToString(sha.ComputeHash(input)).Replace(&quot;-&quot;, &quot;&quot;).ToLower();
+}
+}
+</code></pre></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/rust.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
